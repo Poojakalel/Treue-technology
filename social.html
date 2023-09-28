@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+
+    <style type="text/css">
+        
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+             url(insa.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+           
+            color: white;
+            display: flex;
+        
+            justify-content: space-around;
+            align-items: center;        
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .logo h1{
+            color:bisque;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+     
+        .logo h4{
+            color:brown;
+            font-family:sans-serif;
+        }
+        .menu a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+font-size: 20px;
+position: relative;
+        }
+        .menu a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.2s linear;
+        }
+        .menu a:hover::before{
+            width: 80%;
+        }
+        .register a{
+            text-decoration: none;
+color: white;
+padding: 10px 20px;
+font-size: 20px;
+background: indianred;
+border-radius: 10px;
+transition: 0.2s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 2px solid aqua;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        .h-txt h4{
+            letter-spacing: 2px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background: indianred;
+            letter-spacing: 5px;
+            color: white;
+            padding: 10px 20px;
+            transition: 0.2s;
+            border-radius: 15px;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 2px solid aqua;
+        }
+        .centerdiv{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+     }
+     .centerdiv a{
+        height: 80px;
+        width: 80px;
+        background-color: #f5f6fa;
+        border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 100px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+     }
+     a i{
+        transition: all 0.3s linear;
+     }
+     a:hover i{
+        transform: scale(1.4);
+     }
+     .fa-instagram{
+        color: #e40404 ;
+     }
+     .fa-linkedin{
+        color: #0097e6 ;
+     }
+     .fa-facebook{
+        color: #3b5998 ;
+     }
+     .fa-github{
+        color: #00405d;
+     }
+     .fa-twitter{
+        color: #55acee;
+     }
+     .fa-whatsapp{
+        color: #43d854 ;
+     }
+    </style>
+</head>
+<body>
+    <header>
+<nav>
+    <div class="logo">
+<h1>Pooja</h1>
+    </div>
+    <div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Skills</a>
+<a href="#">Experience</a>
+
+
+    </div>
+    <div class="register">
+        <a href="#">Contact</a>
+    </div>
+</nav>
+<section class="h-txt">
+    <h1>I am Pooja Kalel</h1>
+    <br>
+    <h4> Graduate in computer science. currently persuing internship in Web development at Treue technology </h4></br>
+   
+   <br> <a href="#"> Hire me</a>
+</section>
+<footer>
+<div class="centerdiv">
+    <a href="#">
+        <i class="fa fa-2x fa-facebook"></i>
+    </a>
+    <a href="#">
+        <i class="fa fa-2x fa-github"></i>
+    </a>
+    <a href="#">
+        <i class="fa fa-2x fa-instagram"></i>
+    </a>
+    <a href="#">
+        <i class="fa fa-2x fa-linkedin"></i>
+    </a>
+   
+    <a href="#">
+        <i class="fa fa-2x fa-whatsapp"></i>
+    </a>
+        </div>
+    </footer>
+    </header>
+</body>
+</html>
